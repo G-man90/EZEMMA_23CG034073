@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Hello {{ name }}!</h2>
+    <p>Your detected emotion is: <b>{{ emotion }}</b></p>
+    <img src="{{ image_path }}" width="200">
+    <br><br>
+    <a href="/">Go Back</a> | <a href="/gallery">View Gallery</a>
+</body>
+</html>

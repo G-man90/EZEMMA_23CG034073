@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Emotion Detection App</h1>
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <label>Enter your name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Upload or capture your photo:</label>
+        <input type="file" name="photo" accept="image/*" capture="camera" required><br><br>
+
+        <button type="submit">Detect Emotion</button>
+    </form>
+    <a href="/gallery">View Gallery</a>
+</body>
+</html>
